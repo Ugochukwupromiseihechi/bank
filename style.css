@@ -1,0 +1,396 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; padding: 0;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: .2 linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+section{
+   padding: 5rem 9%;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.header .active{
+    background: #fff;
+}
+
+.header .brand-title{
+    font-size: 1.6rem;
+   margin-right: auto;
+    color: blueviolet;
+    font-weight: 600;
+}
+
+.header .brand-title span{
+    color: #333;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.header .navbar a{
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    color: #333;
+}
+
+.header .navbar a:hover{
+    color: blueviolet;
+}
+
+.header .navbar #nav-close{
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.header .icons a,
+.header .icons div{
+    font-size: 2.5rem;
+    margin: 2rem;
+    cursor: pointer;
+    color: #10221b;
+}
+
+.header .icons a,
+.header .icons div:hover{
+    color: blueviolet;
+}
+
+.header #menu-btn{
+    display: none;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.home{
+    min-height: 70vh;
+    margin: 20rem auto;
+    background-image: url(/image/pexels-hristo-fidanov-1252890.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.home h1{
+    font-size: 3rem;
+    color: blueviolet;
+    text-align: center;
+}
+
+.home p{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    line-height: 2;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.home span{
+    color: lawngreen;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    color: #10221b;
+    justify-content: center;
+}
+
+.blog p{
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 400;
+    color: gray;
+}
+
+.blog{
+    background: #fff;
+}
+
+.blog .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.blog .box-container .box{
+   height: 25rem;
+   width: 30rem;
+   border: 1rem solid transparent;
+   border-radius: .5rem;
+   margin: 2rem;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+/* .blog .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    padding: 2rem;
+    padding-bottom:0;
+    border-radius: .5rem;
+} */
+
+.blog .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog .box-container .box .content{
+    padding: .6rem;
+}
+
+.blog .box-container .box .content h3{
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: lighter;
+    color: gray;
+    margin-right:  9rem;
+    top: 50%;
+}
+
+.blog .box-container .box .content p{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+.newsletter{
+    min-height: 70vh;
+    margin: 20rem auto;
+    background-image: url(/image/pexels-pixabay-220201.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.newsletter h3{
+    font-size: 2.5rem;
+    margin: 1.5rem .5rem;
+    color: azure;
+}
+
+.newsletter p{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: azure;
+}
+
+.newsletter h4{
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: azure;
+}
+
+.newsletter .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.newsletter .box-container .box{
+    height: 23rem;
+    width: 23rem;
+    border-radius: .5rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.newsletter .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.newsletter .content h2{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.newsletter .content h3{
+    text-align: left;
+    padding: 1rem 0;
+}
+
+.newsletter .content img{
+    margin: 2rem 1.5rem;
+    width: 25rem;
+    height: 25rem;
+}
+.footer{
+    background: white;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box p{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: grey;
+}
+
+.footer .box-container .box .share{
+    margin-top: 1rem;
+}
+
+.footer .box-container .box .share a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 2.7rem;
+    color: gray;
+    margin-right: .3rem;
+    text-align: center;
+}
+
+.footer .box-container .box .cv a{
+    color: gray;
+    font-size: 2.2rem;
+    margin: 0 1.5rem;
+}
+
+.footer .box-container .box .cv a:hover{
+    color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header #menu-btn{
+        display: inline-block;
+    }
+
+    .header .brand-title{
+        font-size: 2rem;
+        margin: 4rem;
+        margin-top: 1rem;
+    }
+
+    
+
+    .header .navbar{
+        position: absolute;
+        top: 125%;
+        left: -110%;
+        background: #fff;
+        z-index: 1000;
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .header .navbar.active{
+        left: 0;
+    }
+
+    .header .navbar a{
+        margin: 1.5rem 2rem;
+        font-size: 1.8rem;
+    }
+
+    .header .navbar #nav-close{
+        display: block;
+        position: absolute;
+        top: -13rem;
+        right: 1rem;
+    }
+
+    .home{
+        width: 100%;
+        min-height: 70vh;
+        margin: 35rem auto;
+    }
+
+    .blog .box-container .box{
+       width: 100%;
+    }
+
+    .newsletter .box-container .box{
+        width: 100%;
+    }
+    .newsletter .box-container .box .image{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 55%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+}
