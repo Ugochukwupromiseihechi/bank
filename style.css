@@ -92,7 +92,7 @@ section{
 .home{
     min-height: 70vh;
     margin: 20rem auto;
-    background-image: url(/image/pexels-hristo-fidanov-1252890.jpg);
+    background-image: url(image/pexels-hristo-fidanov-1252890.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -191,7 +191,7 @@ section{
 .newsletter{
     min-height: 70vh;
     margin: 20rem auto;
-    background-image: url(/image/pexels-pixabay-220201.jpg);
+    background-image: url(image/pexels-pixabay-220201.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
